@@ -3,7 +3,10 @@
 
 The sum of the squares of the first ten natural numbers is,
 
+```
 1^2 + 2^2 + ... + 10^2 = 385
+```
+
 The square of the sum of the first ten natural numbers is,
 
 ```
@@ -13,4 +16,11 @@ The square of the sum of the first ten natural numbers is,
 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
 
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+
+# Answer
+
+A straightforward solution is by adding up the cross terms. 
+
+The "overview" pdf doc gives the mathematical formulas of sum of squares and square of sum, thus avoiding hogging the CPU if N is large. 
 
