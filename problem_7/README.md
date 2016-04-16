@@ -5,3 +5,6 @@ By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that 
 What is the 10001st prime number?
 
 
+## Answer
+
+See my solution in `main.py`. The "overview" pdf doc actually uses a very similar idea. 
