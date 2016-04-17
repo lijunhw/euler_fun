@@ -23,9 +23,9 @@ class Solution:
         prime_num_list = [2]
         num = 3  # testing number, starting from 3
         while len(prime_num_list) < n_th:
-            num_ub = math.floor(math.sqrt(num))
+            n_ub = math.floor(math.sqrt(num))  # set scanning upper bound
             for n in prime_num_list:
-                if n <= num_ub: # No need to check numbers larger than sqrt(num)
+                if n <= n_ub: # No need to check numbers larger than sqrt(num)
                     if num % n == 0:  
                         # not a prime number, no need to iterate further
                         break
