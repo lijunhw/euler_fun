@@ -22,3 +22,35 @@ Let us list the factors of the first seven triangle numbers:
 We can see that 28 is the first triangle number to have over five divisors.
 
 What is the value of the first triangle number to have over five hundred divisors?
+
+
+## Answer:
+
+My initial algorithm: 
+
+* Obvious the k-th triangle number can be written as `k*(k+1)/2`. 
+
+* If factorize the triangle number into the product of prime numbers, it can be written in form of 
+
+```
+N = a1^p1 * a2^p2 * a3^p3 ...
+```
+
+which can be done with the Fermat's factorization routine in Problem 3. 
+
+So the number of possible divisors is 
+
+```
+1 + (p1 + p2 + p3 + ...) + (p1*p2 + p1*p3 + ... + p2*p3 + p2*p4 + ...)
++ (p1*p2*p3 + p1*p2*p4 + ...) + ...
+```
+
+And the itertools module in Python can be used to iterate through all combinations. 
+
+The "overview" doc actually showed very similar thinking, but pointing out that the 2nd step is simply
+
+```
+(1+p1) * (1+p2) * (1+p3) ....
+```
+
+which makes my approach look dumb...
