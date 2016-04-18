@@ -7,7 +7,7 @@ class Solution:
     def max_4_product(self, matrix):
         """
         The input is a 20*20 matrix
-        Note that the goal is to find the max product of four adjacent numbers in either of three directions
+        Note that the goal is to find the max product of four adjacent numbers in either of four possible directions
         """
         m = len(matrix)
         n = len(matrix[0])
@@ -22,7 +22,15 @@ class Solution:
                         prod *= matrix[i+k][j+k]
                     if prod > max_prod:
                         max_prod = prod
-    
+
+                # Off-diagonal direction
+                if i < m-p+1 and j >= p-1:
+                    prod = 1
+                    for k in range(p):
+                        prod *= matrix[i+k][j-k]
+                    if prod > max_prod:
+                        max_prod = prod
+
                 # Horizontal direction
                 if j < n-p+1:
                     prod = 1
@@ -48,6 +56,7 @@ if __name__ == "__main__":
             line_chars = line.replace('\n', '').replace('\r', '').split()
             matrix.append([int(c) for c in line_chars])
     
-    print matrix
+    for row in matrix: 
+        print row
     s = Solution()
     print s.max_4_product(matrix)
