@@ -20,3 +20,10 @@ Which starting number, under one million, produces the longest chain?
 NOTE: Once the chain starts the terms are allowed to go above one million.
 
 
+## Answer
+
+Solutions 
+
+1. Calculate on each number between 1 and 1 million in a brute-force way. 
+
+2. Based on Solution 1 above, but using a hash table to cache all previously calculated Collatz numbers. 
