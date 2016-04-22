@@ -11,7 +11,7 @@ How many such routes are there through a 20\*20 grid?
 
 Two solutions are provided in `main.py`: 
 
-* A natural thinking will be use dynamic programming with the formula
+* A natural thinking will be using dynamic programming with the formula
 
 ```
 path_num[i][j] = path_num[i-1][j] + path_num[i][j-1]
