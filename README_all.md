@@ -482,3 +482,47 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 
 NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage.
 
+## Answer
+
+Really nothing fancy. Just be very careful about different situations.
+
+
+# Problem 18: Maximum path sum I
+
+By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
+
+![triangle 1](http://i.imgur.com/OzU9Gca.png)
+
+That is, 3 + 7 + 4 + 9 = 23.
+
+Find the maximum total from top to bottom of the triangle below:
+
+![triangle 2](http://i.imgur.com/IMsTlAm.png)
+
+NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)
+
+
+## Answer
+
+A typical thinking is to convert this triangle to a graph, and do a simple depth-first search (DFS). See `main.py` for details.  
+
+
+
+# Problem 19: Counting Sundays
+
+You are given the following information, but you may prefer to do some research for yourself.
+
+* 1 Jan 1900 was a Monday.
+* Thirty days has September,
+April, June and November.
+All the rest have thirty-one,
+Saving February alone,
+Which has twenty-eight, rain or shine.
+And on leap years, twenty-nine.
+
+* A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
+
+How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
+
+
+
